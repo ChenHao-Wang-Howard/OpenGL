@@ -3,7 +3,7 @@
 This project demonstrates the integration of GLFW and GLAD to create a simple OpenGL application. The application creates a window with a dark gray background and handles basic user input.
 
 ## Project Structure
-```
+
 OpenGL/
 ¢u¢w¢w src/
 ¢x ¢u¢w¢w main.cpp
@@ -12,7 +12,7 @@ OpenGL/
 ¢x ¢u¢w¢w glfw/
 ¢x ¢u¢w¢w glad/
 ¢u¢w¢w CMakeLists.txt
-```
+
 
 - **src/**: Contains the source files for the project.
 - **include/**: Contains the header files for the project.
