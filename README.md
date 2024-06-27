@@ -4,14 +4,14 @@ This project demonstrates the integration of GLFW and GLAD to create a simple Op
 
 ## Project Structure
 ```plaintext
-OpenGL/
-¢u¢w¢w src/
-¢x ¢u¢w¢w main.cpp
-¢u¢w¢w include/
-¢u¢w¢w external/
-¢x ¢u¢w¢w glfw/
-¢x ¢u¢w¢w glad/
-¢u¢w¢w CMakeLists.txt
+MyProject/
+â”œâ”€â”€ src/
+â”‚ â””â”€â”€ main.cpp
+â”œâ”€â”€ include/
+â”œâ”€â”€ external/
+â”‚ â”œâ”€â”€ glfw/
+â”‚ â””â”€â”€ glad/
+â””â”€â”€ CMakeLists.txt
 ```
 
 - **src/**: Contains the source files for the project.
