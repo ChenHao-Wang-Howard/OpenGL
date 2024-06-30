@@ -8,17 +8,21 @@ include_directories(${CMAKE_SOURCE_DIR}/include)
 include_directories(${CMAKE_SOURCE_DIR}/external/glad/include)
 include_directories(${CMAKE_SOURCE_DIR}/external/glfw/include)
 
-# Add source files
-file(GLOB SOURCES
-    ${CMAKE_SOURCE_DIR}/src/*.cpp
-    ${CMAKE_SOURCE_DIR}/external/glad/src/glad.c
-)
-
 # Add GLFW
 add_subdirectory(external/glfw)
 
-# Create executable
-add_executable(${PROJECT_NAME} ${SOURCES})
+# Add glad source
+set(GLAD_SRC ${CMAKE_SOURCE_DIR}/external/glad/src/glad.c)
 
-# Link libraries
-target_link_libraries(${PROJECT_NAME} glfw ${GLFW_LIBRARIES})
+# Function to add a tutorial
+function(add_tutorial tutorial_name)
+    file(GLOB TUTORIAL_SOURCES
+        ${CMAKE_SOURCE_DIR}/src/${tutorial_name}/*.cpp
+    )
+    add_executable(${tutorial_name} ${TUTORIAL_SOURCES} ${GLAD_SRC})
+    target_link_libraries(${tutorial_name} glfw ${GLFW_LIBRARIES})
+endfunction()
+
+# Add each tutorial
+add_tutorial(Hello_Triangle)
+add_tutorial(Shaders)
