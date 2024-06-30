@@ -14,6 +14,7 @@ void processInput(GLFWwindow* window) {
 
 int main() {
     // Initialize GLFW
+    //gg
     if (!glfwInit()) {
         std::cout << "Failed to initialize GLFW" << std::endl;
         return -1;
