@@ -121,4 +121,166 @@ glDeleteShader(vertexShader);
 glDeleteShader(fragmentShader);
 ```
 ## 連結頂點屬性
+
+
+#### 解析頂點緩衝資料
+- **位置資料**：32位元浮點值，每個位置有3個值，數組中緊密排列，從緩衝開始處存放。
+- **glVertexAttribPointer函數**：
+  - `glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);`
+  - 參數介紹：
+    1. **指定頂點屬性位置**：傳入0，對應layout(location = 0)的position屬性。
+    2. **頂點屬性大小**：vec3，有3個值。
+    3. **資料類型**：GL_FLOAT。
+    4. **標準化**：GL_FALSE（不標準化）。
+    5. **步長**：3 * sizeof(float)，緊密排列可設為0。
+    6. **偏移量**：位置資料在數組的開頭，所以是0。
+
+#### 綁定頂點屬性
+- `glEnableVertexAttribArray(0);`
+- 每個頂點屬性從綁定到GL_ARRAY_BUFFER的VBO中獲取數據。
+
+#### 繪製流程
+- 初始化頂點數據並配置頂點屬性：
+  ```cpp
+  glBindBuffer(GL_ARRAY_BUFFER, VBO);
+  glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+  glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
+  glEnableVertexAttribArray(0);
+  ```
+- 使用著色器程序並繪製物體：
+  ```cpp
+  glUseProgram(shaderProgram);
+  someOpenGLFunctionThatDrawsOurTriangle();
+  ```
+
+#### 頂點數組對象 (VAO)
+- VAO儲存頂點屬性配置，可簡化重複綁定和配置工作。
+- 創建和綁定VAO：
+  ```cpp
+  unsigned int VAO;
+  glGenVertexArrays(1, &VAO);
+  glBindVertexArray(VAO);
+  glBindBuffer(GL_ARRAY_BUFFER, VBO);
+  glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+  glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
+  glEnableVertexAttribArray(0);
+  ```
+- 繪製時只需綁定對應的VAO：
+  ```cpp
+  glUseProgram(shaderProgram);
+  glBindVertexArray(VAO);
+  someOpenGLFunctionThatDrawsOurTriangle();
+  ```
+
+#### 繪製三角形
+- 使用`glDrawArrays`函數：
+  ```cpp
+  glDrawArrays(GL_TRIANGLES, 0, 3);
+  ```
+- 參數介紹：
+  1. 繪製圖元類型：GL_TRIANGLES。
+  2. 頂點陣列起始索引：0。
+  3. 繪製頂點數量：3。
+
 ## 元素緩衝對象
+好的，以下是翻譯後的筆記：
+
+#### 基本概念
+- **EBO**也稱為**索引緩衝對象**(Index Buffer Object, IBO)。
+- 主要用來避免重複頂點，優化繪製效率，特別是在繪製包含多個三角形的複雜模型時。
+
+#### 範例：繪製矩形
+- 直接定義頂點時，會出現重複頂點，增加額外開銷：
+  ```cpp
+  float vertices[] = {
+      // 第一個三角形
+      0.5f, 0.5f, 0.0f,   // 右上角
+      0.5f, -0.5f, 0.0f,  // 右下角
+      -0.5f, 0.5f, 0.0f,  // 左上角
+      // 第二個三角形
+      0.5f, -0.5f, 0.0f,  // 右下角
+      -0.5f, -0.5f, 0.0f, // 左下角
+      -0.5f, 0.5f, 0.0f   // 左上角
+  };
+  ```
+- 使用索引時，只需定義唯一頂點，然後指定繪製順序：
+  ```cpp
+  float vertices[] = {
+      0.5f, 0.5f, 0.0f,   // 右上角
+      0.5f, -0.5f, 0.0f,  // 右下角
+      -0.5f, -0.5f, 0.0f, // 左下角
+      -0.5f, 0.5f, 0.0f   // 左上角
+  };
+
+  unsigned int indices[] = {
+      0, 1, 3, // 第一個三角形
+      1, 2, 3  // 第二個三角形
+  };
+  ```
+
+#### 建立和綁定EBO
+- 建立EBO：
+  ```cpp
+  unsigned int EBO;
+  glGenBuffers(1, &EBO);
+  ```
+- 綁定EBO並傳遞索引資料：
+  ```cpp
+  glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
+  glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
+  ```
+
+#### 使用EBO進行繪製
+- 使用`glDrawElements`函數代替`glDrawArrays`：
+  ```cpp
+  glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+  ```
+  - 參數：
+    1. **繪製模式**：GL_TRIANGLES。
+    2. **繪製頂點數量**：6。
+    3. **索引類型**：GL_UNSIGNED_INT。
+    4. **EBO中的偏移量**：0。
+
+#### EBO與VAO的結合
+- 綁定VAO時，自動綁定EBO：
+  ```cpp
+  glBindVertexArray(VAO);
+  glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
+  ```
+- 繪製時只需綁定VAO：
+  ```cpp
+  glUseProgram(shaderProgram);
+  glBindVertexArray(VAO);
+  glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+  glBindVertexArray(0);
+  ```
+
+#### 繪製流程總結
+1. **初始化**：
+   ```cpp
+   glBindVertexArray(VAO);
+   glBindBuffer(GL_ARRAY_BUFFER, VBO);
+   glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+   glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
+   glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
+   glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
+   glEnableVertexAttribArray(0);
+   ```
+2. **渲染循環中**：
+   ```cpp
+   glUseProgram(shaderProgram);
+   glBindVertexArray(VAO);
+   glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+   glBindVertexArray(0);
+   ```
+
+#### 線框模式
+- 開啟線框模式：
+  ```cpp
+  glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+  ```
+- 恢復預設模式：
+  ```cpp
+  glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
+  ```
+
