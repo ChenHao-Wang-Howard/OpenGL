@@ -6,7 +6,12 @@ This project demonstrates the integration of GLFW and GLAD to create a simple Op
 ```plaintext
 MyProject/
 ├── src/
-│ └── main.cpp
+│ ├── turtorial1/
+│ │ ├ main.cpp
+│ │ └ turtorial1.md
+│ └──turtorial2/
+│    ├ main.cpp
+│    └ turtorial2.md
 ├── include/
 ├── external/
 │ ├── glfw/
