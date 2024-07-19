@@ -130,7 +130,7 @@ std::cout << "Maximum number of vertex attributes supported: " << nrAttributes <
   ```
 - **結果**：片段著色器接收到頂點著色器傳來的深紅色，並輸出該顏色。
 
-##Uniform
+## Uniform
 
 
 #### 基本概念
@@ -213,7 +213,7 @@ std::cout << "Maximum number of vertex attributes supported: " << nrAttributes <
 - Uniform是一個全域變數，在著色器程序的任何階段都可以訪問。
 - 在頂點屬性無法滿足需求時，使用Uniform是一個有效的解決方案。
 
-##更多屬性
+## 更多屬性
 
 
 #### 基本概念
@@ -282,6 +282,6 @@ glEnableVertexAttribArray(1);
 ---
 
 這些筆記涵蓋了在頂點資料中添加更多屬性（如顏色）的過程，並展示了如何更新著色器和頂點屬性指標以處理新的頂點數據佈局，幫助你快速理解和回顧相關內容。
-##我們自己的著色器類
+## 我們自己的著色器類
 
-##從檔案索取
+## 從檔案索取
