@@ -26,3 +26,4 @@ endfunction()
 # Add each tutorial
 add_tutorial(Hello_Triangle)
 add_tutorial(Shaders)
+add_tutorial(Textures)
