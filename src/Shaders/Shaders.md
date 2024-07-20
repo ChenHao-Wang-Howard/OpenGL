@@ -284,4 +284,189 @@ glEnableVertexAttribArray(1);
 這些筆記涵蓋了在頂點資料中添加更多屬性（如顏色）的過程，並展示了如何更新著色器和頂點屬性指標以處理新的頂點數據佈局，幫助你快速理解和回顧相關內容。
 ## 我們自己的著色器類
 
+
+#### 基本概念
+- 寫、編譯和管理著色器是一件麻煩事，我們會創建一個類別來簡化這個過程。
+- 這個類別可以從硬碟讀取著色器，編譯並連結它們，並對它們進行錯誤檢測。
+
+#### 類別結構
+- 我們會將著色器類別全部放在頭檔裡，方便學習和移植。
+
+#### 頭檔內容
+- 包含必要的include，並定義類別結構：
+```cpp
+#ifndef SHADER_H
+#define SHADER_H
+
+#include <glad/glad.h> // 包含glad來獲取所有必需的OpenGL頭文件
+
+#include <string>
+#include <fstream>
+#include <sstream>
+#include <iostream>
+
+class Shader
+{
+public:
+    // 程序ID
+    unsigned int ID;
+
+    // 建構子，讀取並構建著色器
+    Shader(const char* vertexPath, const char* fragmentPath);
+    // 使用/激活程序
+    void use();
+    // uniform工具函數
+    void setBool(const std::string &name, bool value) const;  
+    void setInt(const std::string &name, int value) const;   
+    void setFloat(const std::string &name, float value) const;
+};
+
+#endif
+```
+
+#### 說明
+- 使用預處理指令防止重複包含：
+  ```cpp
+  #ifndef SHADER_H
+  #define SHADER_H
+  ```
+- 預處理指令告知編譯器在文件未被包含過的情況下才包含和編譯這個頭文件，防止連結衝突。
+- 類別`Shader`儲存了著色器程式的ID。
+- 建構子需要頂點和片段著色器原始碼的檔案路徑，允許從硬碟讀取原始碼文字檔案。
+- 工具函數：
+  - `use`：激活著色器程序。
+  - `setBool`、`setInt`、`setFloat`：查詢uniform位置並設定其值。
+
+
 ## 從檔案索取
+
+
+#### 基本概念
+- 使用C++檔案流讀取著色器內容，將其存儲到string物件中。
+- 編譯和連結著色器，並檢查編譯/連結過程中的錯誤。
+
+#### 讀取檔案內容
+- 使用C++檔案流從指定路徑讀取頂點和片段著色器的內容。
+- 將檔案內容存儲到string物件中：
+  ```cpp
+  Shader(const char* vertexPath, const char* fragmentPath)
+  {
+      // 1. 從文件路徑中獲取頂點/片段著色器
+      std::string vertexCode;
+      std::string fragmentCode;
+      std::ifstream vShaderFile;
+      std::ifstream fShaderFile;
+      // 保證ifstream對象可以拋出異常：
+      vShaderFile.exceptions(std::ifstream::failbit | std::ifstream::badbit);
+      fShaderFile.exceptions(std::ifstream::failbit | std::ifstream::badbit);
+      try 
+      {
+          // 打開文件
+          vShaderFile.open(vertexPath);
+          fShaderFile.open(fragmentPath);
+          std::stringstream vShaderStream, fShaderStream;
+          // 讀取文件的緩衝內容到數據流中
+          vShaderStream << vShaderFile.rdbuf();
+          fShaderStream << fShaderFile.rdbuf();       
+          // 關閉文件處理器
+          vShaderFile.close();
+          fShaderFile.close();
+          // 轉換數據流到string
+          vertexCode = vShaderStream.str();
+          fragmentCode = fShaderStream.str();     
+      }
+      catch (std::ifstream::failure e)
+      {
+          std::cout << "ERROR::SHADER::FILE_NOT_SUCCESSFULLY_READ" << std::endl;
+      }
+      const char* vShaderCode = vertexCode.c_str();
+      const char* fShaderCode = fragmentCode.c_str();
+  }
+  ```
+
+#### 編譯和連結著色器
+- 編譯頂點和片段著色器，檢查編譯錯誤：
+  ```cpp
+  // 2. 編譯著色器
+  unsigned int vertex, fragment;
+  int success;
+  char infoLog[512];
+
+  // 頂點著色器
+  vertex = glCreateShader(GL_VERTEX_SHADER);
+  glShaderSource(vertex, 1, &vShaderCode, NULL);
+  glCompileShader(vertex);
+  // 打印編譯錯誤（如果有的話）
+  glGetShaderiv(vertex, GL_COMPILE_STATUS, &success);
+  if (!success)
+  {
+      glGetShaderInfoLog(vertex, 512, NULL, infoLog);
+      std::cout << "ERROR::SHADER::VERTEX::COMPILATION_FAILED\n" << infoLog << std::endl;
+  };
+
+  // 片段著色器也類似
+  [...]
+
+  // 著色器程序
+  ID = glCreateProgram();
+  glAttachShader(ID, vertex);
+  glAttachShader(ID, fragment);
+  glLinkProgram(ID);
+  // 打印連接錯誤（如果有的話）
+  glGetProgramiv(ID, GL_LINK_STATUS, &success);
+  if (!success)
+  {
+      glGetProgramInfoLog(ID, 512, NULL, infoLog);
+      std::cout << "ERROR::SHADER::PROGRAM::LINKING_FAILED\n" << infoLog << std::endl;
+  }
+
+  // 刪除著色器，它們已經連接到我們的程序中了，已經不再需要了
+  glDeleteShader(vertex);
+  glDeleteShader(fragment);
+  ```
+
+#### 使用函數
+- 簡單的使用函數`use`：
+  ```cpp
+  void use() 
+  { 
+      glUseProgram(ID);
+  }
+  ```
+
+#### Uniform設置函數
+- 設置uniform變數的值：
+  ```cpp
+  void setBool(const std::string &name, bool value) const
+  {
+      glUniform1i(glGetUniformLocation(ID, name.c_str()), (int)value); 
+  }
+  void setInt(const std::string &name, int value) const
+  { 
+      glUniform1i(glGetUniformLocation(ID, name.c_str()), value); 
+  }
+  void setFloat(const std::string &name, float value) const
+  { 
+      glUniform1f(glGetUniformLocation(ID, name.c_str()), value); 
+  } 
+  ```
+
+#### 使用著色器類別
+- 創建一個著色器對象並使用它：
+  ```cpp
+  Shader ourShader("path/to/shaders/shader.vs", "path/to/shaders/shader.fs");
+  ...
+  while(...)
+  {
+      ourShader.use();
+      ourShader.setFloat("someUniform", 1.0f);
+      DrawStuff();
+  }
+  ```
+
+#### 小結
+- 讀取頂點和片段著色器的內容，編譯並連結，並檢查錯誤。
+- 使用簡單的`use`函數來激活著色器程序。
+- 設置uniform變數值的函數，方便在渲染循環中動態更新uniform。
+
+
