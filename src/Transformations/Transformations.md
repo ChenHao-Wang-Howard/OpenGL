@@ -26,6 +26,101 @@
 ## 向量與標量運算
 ## 向量取反
 ## 向量加減
+### 向量 - 筆記
+
+#### 基本概念
+- **向量**：一個具有方向和大小（強度或長度）的量。
+- **舉例**：藏寶圖的指示「向左走10步」中，「左」是方向，「10步」是向量的長度。
+- **維度**：向量可以在任意維度上，通常使用2到4維表示。
+
+#### 2D 向量
+- 向量在2D影像中用箭頭表示，如(x, y)。
+- 向量的起始點不同但方向和大小相同，它們是相等的。
+- 數學表示：$\vec{v} = \begin{pmatrix} x \\ y \\ z \end{pmatrix}$。
+
+#### 向量與位置
+- 向量可以從(0, 0, 0)指向某個點，稱為位置向量（Position Vector）。
+- 例如：位置向量(3, 5)從(0, 0)指向(3, 5)。
+
+#### 向量運算
+- **向量與標量運算**：向量可以與標量進行加減乘除運算，對每個分量分別運算：
+  \[
+  \begin{pmatrix}
+  1 \\
+  2 \\
+  3
+  \end{pmatrix}
+  + x =
+  \begin{pmatrix}
+  1 + x \\
+  2 + x \\
+  3 + x
+  \end{pmatrix}
+  \]
+  - 注意：標量除向量和標量減向量是未定義的運算。
+  - 註：數學上沒有向量與標量相加的運算，但線性代數函式庫（如GLM）支持這種運算。
+
+- **向量取反**：將向量方向逆轉，對每個分量取反：
+  \[
+  -\vec{v} = -\begin{pmatrix}
+  v_x \\
+  v_y \\
+  v_z
+  \end{pmatrix} =
+  \begin{pmatrix}
+  -v_x \\
+  -v_y \\
+  -v_z
+  \end{pmatrix}
+  \]
+
+- **向量加減**：分量相加：
+  \[
+  \vec{v} = \begin{pmatrix}
+  1 \\
+  2 \\
+  3
+  \end{pmatrix}, \quad \vec{k} = \begin{pmatrix}
+  4 \\
+  5 \\
+  6
+  \end{pmatrix}
+  \rightarrow \vec{v} + \vec{k} = \begin{pmatrix}
+  1 + 4 \\
+  2 + 5 \\
+  3 + 6
+  \end{pmatrix} =
+  \begin{pmatrix}
+  5 \\
+  7 \\
+  9
+  \end{pmatrix}
+  \]
+
+- **向量減法**：等於加上第二個向量的相反向量：
+  \[
+  \vec{v} = \begin{pmatrix}
+  1 \\
+  2 \\
+  3
+  \end{pmatrix}, \quad \vec{k} = \begin{pmatrix}
+  4 \\
+  5 \\
+  6
+  \end{pmatrix}
+  \rightarrow \vec{v} - \vec{k} = \vec{v} + (-\vec{k}) = \begin{pmatrix}
+  1 + (-4) \\
+  2 + (-5) \\
+  3 + (-6)
+  \end{pmatrix} =
+  \begin{pmatrix}
+  -3 \\
+  -3 \\
+  -3
+  \end{pmatrix}
+  \]
+
+
 ## 長度
 ## 向量相乘
 ## 矩陣
