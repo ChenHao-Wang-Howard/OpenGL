@@ -7,6 +7,7 @@ set(CMAKE_CXX_STANDARD 11)
 include_directories(${CMAKE_SOURCE_DIR}/include)
 include_directories(${CMAKE_SOURCE_DIR}/external/glad/include)
 include_directories(${CMAKE_SOURCE_DIR}/external/glfw/include)
+include_directories(${CMAKE_SOURCE_DIR}/external/glm)
 
 # Add GLFW
 add_subdirectory(external/glfw)
@@ -21,9 +22,12 @@ function(add_tutorial tutorial_name)
     )
     add_executable(${tutorial_name} ${TUTORIAL_SOURCES} ${GLAD_SRC})
     target_link_libraries(${tutorial_name} glfw ${GLFW_LIBRARIES})
+    target_include_directories(${tutorial_name} PRIVATE ${CMAKE_SOURCE_DIR}/external/glm)
 endfunction()
 
 # Add each tutorial
 add_tutorial(Hello_Triangle)
 add_tutorial(Shaders)
 add_tutorial(Textures)
+add_tutorial(Transformations)
+add_tutorial(Camera)
