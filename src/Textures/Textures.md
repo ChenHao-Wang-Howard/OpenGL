@@ -87,13 +87,9 @@
 #### 紋理過濾方式
 - **GL_NEAREST**（鄰近過濾）：選擇最接近紋理座標的像素。
   - 預設方式，產生顆粒狀的圖案。
-  - 圖片示例：
-    ![GL_NEAREST示例圖](https://learnopengl.com/img/getting-started/texture_filter_nearest.png)
 
 - **GL_LINEAR**（線性過濾）：基於紋理座標附近的紋理像素進行插值計算。
   - 產生更平滑的圖案。
-  - 圖片示例：
-    ![GL_LINEAR示例圖](https://learnopengl.com/img/getting-started/texture_filter_linear.png)
 
 #### 設定紋理過濾方式
 - 設定紋理過濾的選項，可以在放大和縮小操作時不同：
@@ -158,13 +154,6 @@
    - 創建一個新的C++文件，輸入以下程式碼：
      ```cpp
      #define STB_IMAGE_IMPLEMENTATION
-     #include "stb_image.h"
-     ```
-   - 定義`STB_IMAGE_IMPLEMENTATION`會讓預處理器修改頭文件，包含相關的函數定義原始碼。
-
-3. **在程式中包含stb_image.h**：
-   - 在你的主程式文件中包含`stb_image.h`：
-     ```cpp
      #include "stb_image.h"
      ```
 
