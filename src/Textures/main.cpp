@@ -42,8 +42,8 @@ int main()
     }
 
     // 構建和編譯著色器程序
-    Shader ourShader("C:\\Users\\RTX2070\\source\\repos\\OpenGL\\resource\\Vertex_shader.vs",
-        "C:\\Users\\RTX2070\\source\\repos\\OpenGL\\resource\\Fragment_shader.fs");
+    Shader ourShader("C:\\Users\\RTX2070\\source\\repos\\OpenGL\\src\\Textures\\Vertex_shader.vs",
+        "C:\\Users\\RTX2070\\source\\repos\\OpenGL\\src\\Textures\\Fragment_shader.fs");
 
     // 設置頂點數據和配置頂點屬性
     float vertices[] = {
