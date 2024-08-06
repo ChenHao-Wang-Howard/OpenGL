@@ -236,7 +236,7 @@
   - 執行三個階段的光照計算：
     1. **定向光照計算**
     2. **點光源計算**
-    3. **聚光計算（可選）**
+    3. **聚光計算**
 
     ```glsl
     void main()
@@ -252,7 +252,7 @@
         for(int i = 0; i < NR_POINT_LIGHTS; i++)
             result += CalcPointLight(pointLights[i], norm, FragPos, viewDir);    
 
-        // 第三階段：聚光（可選）
+        // 第三階段：聚光
         // result += CalcSpotLight(spotLight, norm, FragPos, viewDir);    
 
         FragColor = vec4(result, 1.0);
