@@ -253,7 +253,7 @@
             result += CalcPointLight(pointLights[i], norm, FragPos, viewDir);    
 
         // 第三階段：聚光
-        // result += CalcSpotLight(spotLight, norm, FragPos, viewDir);    
+        result += CalcSpotLight(spotLight, norm, FragPos, viewDir);    
 
         FragColor = vec4(result, 1.0);
     }
