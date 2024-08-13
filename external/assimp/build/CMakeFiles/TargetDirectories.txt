@@ -1,0 +1,13 @@
+C:/Users/RTX2070/source/repos/OpenGL/external/assimp/build/CMakeFiles/uninstall.dir
+C:/Users/RTX2070/source/repos/OpenGL/external/assimp/build/CMakeFiles/UpdateAssimpLibsDebugSymbolsAndDLLs.dir
+C:/Users/RTX2070/source/repos/OpenGL/external/assimp/build/CMakeFiles/INSTALL.dir
+C:/Users/RTX2070/source/repos/OpenGL/external/assimp/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/RTX2070/source/repos/OpenGL/external/assimp/build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/RTX2070/source/repos/OpenGL/external/assimp/build/contrib/zlib/CMakeFiles/zlibstatic.dir
+C:/Users/RTX2070/source/repos/OpenGL/external/assimp/build/contrib/zlib/CMakeFiles/INSTALL.dir
+C:/Users/RTX2070/source/repos/OpenGL/external/assimp/build/contrib/zlib/CMakeFiles/ALL_BUILD.dir
+C:/Users/RTX2070/source/repos/OpenGL/external/assimp/build/code/CMakeFiles/assimp.dir
+C:/Users/RTX2070/source/repos/OpenGL/external/assimp/build/code/CMakeFiles/INSTALL.dir
+C:/Users/RTX2070/source/repos/OpenGL/external/assimp/build/test/CMakeFiles/unit.dir
+C:/Users/RTX2070/source/repos/OpenGL/external/assimp/build/test/CMakeFiles/INSTALL.dir
+C:/Users/RTX2070/source/repos/OpenGL/external/assimp/build/test/headercheck/CMakeFiles/INSTALL.dir

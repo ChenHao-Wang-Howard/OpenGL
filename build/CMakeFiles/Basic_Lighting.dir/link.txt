@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\Basic_Lighting.dir/objects.a
+C:\msys64\mingw64\bin\ar.exe qc CMakeFiles\Basic_Lighting.dir/objects.a @CMakeFiles\Basic_Lighting.dir\objects1.rsp
+C:\msys64\mingw64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\Basic_Lighting.dir/objects.a -Wl,--no-whole-archive -o Basic_Lighting.exe -Wl,--out-implib,libBasic_Lighting.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Basic_Lighting.dir\linkLibs.rsp

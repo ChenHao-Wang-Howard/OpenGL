@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\RTX2070\source\repos\OpenGL\external\assimp\build\CMakeFiles\703438f6f3571c9a57a9d2a488e81dcd\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{5F777688-B6F4-3BA0-A50B-54363AE8D318}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

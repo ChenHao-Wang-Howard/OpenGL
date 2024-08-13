@@ -1,0 +1,260 @@
+[
+{
+  "directory": "C:/Users/RTX2070/source/repos/OpenGL/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Hello_Triangle.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\Hello_Triangle.dir\\src\\Hello_Triangle\\main.cpp.obj -c C:\\Users\\RTX2070\\source\\repos\\OpenGL\\src\\Hello_Triangle\\main.cpp",
+  "file": "C:/Users/RTX2070/source/repos/OpenGL/src/Hello_Triangle/main.cpp",
+  "output": "CMakeFiles/Hello_Triangle.dir/src/Hello_Triangle/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/RTX2070/source/repos/OpenGL/build",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe  @CMakeFiles/Hello_Triangle.dir/includes_C.rsp -g -o CMakeFiles\\Hello_Triangle.dir\\external\\glad\\src\\glad.c.obj -c C:\\Users\\RTX2070\\source\\repos\\OpenGL\\external\\glad\\src\\glad.c",
+  "file": "C:/Users/RTX2070/source/repos/OpenGL/external/glad/src/glad.c",
+  "output": "CMakeFiles/Hello_Triangle.dir/external/glad/src/glad.c.obj"
+},
+{
+  "directory": "C:/Users/RTX2070/source/repos/OpenGL/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Shaders.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\Shaders.dir\\src\\Shaders\\main.cpp.obj -c C:\\Users\\RTX2070\\source\\repos\\OpenGL\\src\\Shaders\\main.cpp",
+  "file": "C:/Users/RTX2070/source/repos/OpenGL/src/Shaders/main.cpp",
+  "output": "CMakeFiles/Shaders.dir/src/Shaders/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/RTX2070/source/repos/OpenGL/build",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe  @CMakeFiles/Shaders.dir/includes_C.rsp -g -o CMakeFiles\\Shaders.dir\\external\\glad\\src\\glad.c.obj -c C:\\Users\\RTX2070\\source\\repos\\OpenGL\\external\\glad\\src\\glad.c",
+  "file": "C:/Users/RTX2070/source/repos/OpenGL/external/glad/src/glad.c",
+  "output": "CMakeFiles/Shaders.dir/external/glad/src/glad.c.obj"
+},
+{
+  "directory": "C:/Users/RTX2070/source/repos/OpenGL/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Textures.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\Textures.dir\\src\\Textures\\main.cpp.obj -c C:\\Users\\RTX2070\\source\\repos\\OpenGL\\src\\Textures\\main.cpp",
+  "file": "C:/Users/RTX2070/source/repos/OpenGL/src/Textures/main.cpp",
+  "output": "CMakeFiles/Textures.dir/src/Textures/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/RTX2070/source/repos/OpenGL/build",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe  @CMakeFiles/Textures.dir/includes_C.rsp -g -o CMakeFiles\\Textures.dir\\external\\glad\\src\\glad.c.obj -c C:\\Users\\RTX2070\\source\\repos\\OpenGL\\external\\glad\\src\\glad.c",
+  "file": "C:/Users/RTX2070/source/repos/OpenGL/external/glad/src/glad.c",
+  "output": "CMakeFiles/Textures.dir/external/glad/src/glad.c.obj"
+},
+{
+  "directory": "C:/Users/RTX2070/source/repos/OpenGL/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Transformations.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\Transformations.dir\\src\\Transformations\\main.cpp.obj -c C:\\Users\\RTX2070\\source\\repos\\OpenGL\\src\\Transformations\\main.cpp",
+  "file": "C:/Users/RTX2070/source/repos/OpenGL/src/Transformations/main.cpp",
+  "output": "CMakeFiles/Transformations.dir/src/Transformations/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/RTX2070/source/repos/OpenGL/build",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe  @CMakeFiles/Transformations.dir/includes_C.rsp -g -o CMakeFiles\\Transformations.dir\\external\\glad\\src\\glad.c.obj -c C:\\Users\\RTX2070\\source\\repos\\OpenGL\\external\\glad\\src\\glad.c",
+  "file": "C:/Users/RTX2070/source/repos/OpenGL/external/glad/src/glad.c",
+  "output": "CMakeFiles/Transformations.dir/external/glad/src/glad.c.obj"
+},
+{
+  "directory": "C:/Users/RTX2070/source/repos/OpenGL/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Camera.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\Camera.dir\\src\\Camera\\main.cpp.obj -c C:\\Users\\RTX2070\\source\\repos\\OpenGL\\src\\Camera\\main.cpp",
+  "file": "C:/Users/RTX2070/source/repos/OpenGL/src/Camera/main.cpp",
+  "output": "CMakeFiles/Camera.dir/src/Camera/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/RTX2070/source/repos/OpenGL/build",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe  @CMakeFiles/Camera.dir/includes_C.rsp -g -o CMakeFiles\\Camera.dir\\external\\glad\\src\\glad.c.obj -c C:\\Users\\RTX2070\\source\\repos\\OpenGL\\external\\glad\\src\\glad.c",
+  "file": "C:/Users/RTX2070/source/repos/OpenGL/external/glad/src/glad.c",
+  "output": "CMakeFiles/Camera.dir/external/glad/src/glad.c.obj"
+},
+{
+  "directory": "C:/Users/RTX2070/source/repos/OpenGL/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Colors.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\Colors.dir\\src\\Colors\\main.cpp.obj -c C:\\Users\\RTX2070\\source\\repos\\OpenGL\\src\\Colors\\main.cpp",
+  "file": "C:/Users/RTX2070/source/repos/OpenGL/src/Colors/main.cpp",
+  "output": "CMakeFiles/Colors.dir/src/Colors/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/RTX2070/source/repos/OpenGL/build",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe  @CMakeFiles/Colors.dir/includes_C.rsp -g -o CMakeFiles\\Colors.dir\\external\\glad\\src\\glad.c.obj -c C:\\Users\\RTX2070\\source\\repos\\OpenGL\\external\\glad\\src\\glad.c",
+  "file": "C:/Users/RTX2070/source/repos/OpenGL/external/glad/src/glad.c",
+  "output": "CMakeFiles/Colors.dir/external/glad/src/glad.c.obj"
+},
+{
+  "directory": "C:/Users/RTX2070/source/repos/OpenGL/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Basic_Lighting.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\Basic_Lighting.dir\\src\\Basic_Lighting\\main.cpp.obj -c C:\\Users\\RTX2070\\source\\repos\\OpenGL\\src\\Basic_Lighting\\main.cpp",
+  "file": "C:/Users/RTX2070/source/repos/OpenGL/src/Basic_Lighting/main.cpp",
+  "output": "CMakeFiles/Basic_Lighting.dir/src/Basic_Lighting/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/RTX2070/source/repos/OpenGL/build",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe  @CMakeFiles/Basic_Lighting.dir/includes_C.rsp -g -o CMakeFiles\\Basic_Lighting.dir\\external\\glad\\src\\glad.c.obj -c C:\\Users\\RTX2070\\source\\repos\\OpenGL\\external\\glad\\src\\glad.c",
+  "file": "C:/Users/RTX2070/source/repos/OpenGL/external/glad/src/glad.c",
+  "output": "CMakeFiles/Basic_Lighting.dir/external/glad/src/glad.c.obj"
+},
+{
+  "directory": "C:/Users/RTX2070/source/repos/OpenGL/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Materials.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\Materials.dir\\src\\Materials\\main.cpp.obj -c C:\\Users\\RTX2070\\source\\repos\\OpenGL\\src\\Materials\\main.cpp",
+  "file": "C:/Users/RTX2070/source/repos/OpenGL/src/Materials/main.cpp",
+  "output": "CMakeFiles/Materials.dir/src/Materials/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/RTX2070/source/repos/OpenGL/build",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe  @CMakeFiles/Materials.dir/includes_C.rsp -g -o CMakeFiles\\Materials.dir\\external\\glad\\src\\glad.c.obj -c C:\\Users\\RTX2070\\source\\repos\\OpenGL\\external\\glad\\src\\glad.c",
+  "file": "C:/Users/RTX2070/source/repos/OpenGL/external/glad/src/glad.c",
+  "output": "CMakeFiles/Materials.dir/external/glad/src/glad.c.obj"
+},
+{
+  "directory": "C:/Users/RTX2070/source/repos/OpenGL/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Lighting_maps.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\Lighting_maps.dir\\src\\Lighting_maps\\main.cpp.obj -c C:\\Users\\RTX2070\\source\\repos\\OpenGL\\src\\Lighting_maps\\main.cpp",
+  "file": "C:/Users/RTX2070/source/repos/OpenGL/src/Lighting_maps/main.cpp",
+  "output": "CMakeFiles/Lighting_maps.dir/src/Lighting_maps/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/RTX2070/source/repos/OpenGL/build",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe  @CMakeFiles/Lighting_maps.dir/includes_C.rsp -g -o CMakeFiles\\Lighting_maps.dir\\external\\glad\\src\\glad.c.obj -c C:\\Users\\RTX2070\\source\\repos\\OpenGL\\external\\glad\\src\\glad.c",
+  "file": "C:/Users/RTX2070/source/repos/OpenGL/external/glad/src/glad.c",
+  "output": "CMakeFiles/Lighting_maps.dir/external/glad/src/glad.c.obj"
+},
+{
+  "directory": "C:/Users/RTX2070/source/repos/OpenGL/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Light_casters.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\Light_casters.dir\\src\\Light_casters\\main.cpp.obj -c C:\\Users\\RTX2070\\source\\repos\\OpenGL\\src\\Light_casters\\main.cpp",
+  "file": "C:/Users/RTX2070/source/repos/OpenGL/src/Light_casters/main.cpp",
+  "output": "CMakeFiles/Light_casters.dir/src/Light_casters/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/RTX2070/source/repos/OpenGL/build",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe  @CMakeFiles/Light_casters.dir/includes_C.rsp -g -o CMakeFiles\\Light_casters.dir\\external\\glad\\src\\glad.c.obj -c C:\\Users\\RTX2070\\source\\repos\\OpenGL\\external\\glad\\src\\glad.c",
+  "file": "C:/Users/RTX2070/source/repos/OpenGL/external/glad/src/glad.c",
+  "output": "CMakeFiles/Light_casters.dir/external/glad/src/glad.c.obj"
+},
+{
+  "directory": "C:/Users/RTX2070/source/repos/OpenGL/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/Multiple_lights.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\Multiple_lights.dir\\src\\Multiple_lights\\main.cpp.obj -c C:\\Users\\RTX2070\\source\\repos\\OpenGL\\src\\Multiple_lights\\main.cpp",
+  "file": "C:/Users/RTX2070/source/repos/OpenGL/src/Multiple_lights/main.cpp",
+  "output": "CMakeFiles/Multiple_lights.dir/src/Multiple_lights/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/RTX2070/source/repos/OpenGL/build",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe  @CMakeFiles/Multiple_lights.dir/includes_C.rsp -g -o CMakeFiles\\Multiple_lights.dir\\external\\glad\\src\\glad.c.obj -c C:\\Users\\RTX2070\\source\\repos\\OpenGL\\external\\glad\\src\\glad.c",
+  "file": "C:/Users/RTX2070/source/repos/OpenGL/external/glad/src/glad.c",
+  "output": "CMakeFiles/Multiple_lights.dir/external/glad/src/glad.c.obj"
+},
+{
+  "directory": "C:/Users/RTX2070/source/repos/OpenGL/build/external/glfw/src",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -g -std=c99 -Wall -o CMakeFiles\\glfw.dir\\context.c.obj -c C:\\Users\\RTX2070\\source\\repos\\OpenGL\\external\\glfw\\src\\context.c",
+  "file": "C:/Users/RTX2070/source/repos/OpenGL/external/glfw/src/context.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/context.c.obj"
+},
+{
+  "directory": "C:/Users/RTX2070/source/repos/OpenGL/build/external/glfw/src",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -g -std=c99 -Wall -o CMakeFiles\\glfw.dir\\init.c.obj -c C:\\Users\\RTX2070\\source\\repos\\OpenGL\\external\\glfw\\src\\init.c",
+  "file": "C:/Users/RTX2070/source/repos/OpenGL/external/glfw/src/init.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/init.c.obj"
+},
+{
+  "directory": "C:/Users/RTX2070/source/repos/OpenGL/build/external/glfw/src",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -g -std=c99 -Wall -o CMakeFiles\\glfw.dir\\input.c.obj -c C:\\Users\\RTX2070\\source\\repos\\OpenGL\\external\\glfw\\src\\input.c",
+  "file": "C:/Users/RTX2070/source/repos/OpenGL/external/glfw/src/input.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/input.c.obj"
+},
+{
+  "directory": "C:/Users/RTX2070/source/repos/OpenGL/build/external/glfw/src",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -g -std=c99 -Wall -o CMakeFiles\\glfw.dir\\monitor.c.obj -c C:\\Users\\RTX2070\\source\\repos\\OpenGL\\external\\glfw\\src\\monitor.c",
+  "file": "C:/Users/RTX2070/source/repos/OpenGL/external/glfw/src/monitor.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/monitor.c.obj"
+},
+{
+  "directory": "C:/Users/RTX2070/source/repos/OpenGL/build/external/glfw/src",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -g -std=c99 -Wall -o CMakeFiles\\glfw.dir\\platform.c.obj -c C:\\Users\\RTX2070\\source\\repos\\OpenGL\\external\\glfw\\src\\platform.c",
+  "file": "C:/Users/RTX2070/source/repos/OpenGL/external/glfw/src/platform.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/platform.c.obj"
+},
+{
+  "directory": "C:/Users/RTX2070/source/repos/OpenGL/build/external/glfw/src",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -g -std=c99 -Wall -o CMakeFiles\\glfw.dir\\vulkan.c.obj -c C:\\Users\\RTX2070\\source\\repos\\OpenGL\\external\\glfw\\src\\vulkan.c",
+  "file": "C:/Users/RTX2070/source/repos/OpenGL/external/glfw/src/vulkan.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/vulkan.c.obj"
+},
+{
+  "directory": "C:/Users/RTX2070/source/repos/OpenGL/build/external/glfw/src",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -g -std=c99 -Wall -o CMakeFiles\\glfw.dir\\window.c.obj -c C:\\Users\\RTX2070\\source\\repos\\OpenGL\\external\\glfw\\src\\window.c",
+  "file": "C:/Users/RTX2070/source/repos/OpenGL/external/glfw/src/window.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/window.c.obj"
+},
+{
+  "directory": "C:/Users/RTX2070/source/repos/OpenGL/build/external/glfw/src",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -g -std=c99 -Wall -o CMakeFiles\\glfw.dir\\egl_context.c.obj -c C:\\Users\\RTX2070\\source\\repos\\OpenGL\\external\\glfw\\src\\egl_context.c",
+  "file": "C:/Users/RTX2070/source/repos/OpenGL/external/glfw/src/egl_context.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/egl_context.c.obj"
+},
+{
+  "directory": "C:/Users/RTX2070/source/repos/OpenGL/build/external/glfw/src",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -g -std=c99 -Wall -o CMakeFiles\\glfw.dir\\osmesa_context.c.obj -c C:\\Users\\RTX2070\\source\\repos\\OpenGL\\external\\glfw\\src\\osmesa_context.c",
+  "file": "C:/Users/RTX2070/source/repos/OpenGL/external/glfw/src/osmesa_context.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.obj"
+},
+{
+  "directory": "C:/Users/RTX2070/source/repos/OpenGL/build/external/glfw/src",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -g -std=c99 -Wall -o CMakeFiles\\glfw.dir\\null_init.c.obj -c C:\\Users\\RTX2070\\source\\repos\\OpenGL\\external\\glfw\\src\\null_init.c",
+  "file": "C:/Users/RTX2070/source/repos/OpenGL/external/glfw/src/null_init.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/null_init.c.obj"
+},
+{
+  "directory": "C:/Users/RTX2070/source/repos/OpenGL/build/external/glfw/src",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -g -std=c99 -Wall -o CMakeFiles\\glfw.dir\\null_monitor.c.obj -c C:\\Users\\RTX2070\\source\\repos\\OpenGL\\external\\glfw\\src\\null_monitor.c",
+  "file": "C:/Users/RTX2070/source/repos/OpenGL/external/glfw/src/null_monitor.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/null_monitor.c.obj"
+},
+{
+  "directory": "C:/Users/RTX2070/source/repos/OpenGL/build/external/glfw/src",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -g -std=c99 -Wall -o CMakeFiles\\glfw.dir\\null_window.c.obj -c C:\\Users\\RTX2070\\source\\repos\\OpenGL\\external\\glfw\\src\\null_window.c",
+  "file": "C:/Users/RTX2070/source/repos/OpenGL/external/glfw/src/null_window.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/null_window.c.obj"
+},
+{
+  "directory": "C:/Users/RTX2070/source/repos/OpenGL/build/external/glfw/src",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -g -std=c99 -Wall -o CMakeFiles\\glfw.dir\\null_joystick.c.obj -c C:\\Users\\RTX2070\\source\\repos\\OpenGL\\external\\glfw\\src\\null_joystick.c",
+  "file": "C:/Users/RTX2070/source/repos/OpenGL/external/glfw/src/null_joystick.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/null_joystick.c.obj"
+},
+{
+  "directory": "C:/Users/RTX2070/source/repos/OpenGL/build/external/glfw/src",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -g -std=c99 -Wall -o CMakeFiles\\glfw.dir\\win32_module.c.obj -c C:\\Users\\RTX2070\\source\\repos\\OpenGL\\external\\glfw\\src\\win32_module.c",
+  "file": "C:/Users/RTX2070/source/repos/OpenGL/external/glfw/src/win32_module.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/win32_module.c.obj"
+},
+{
+  "directory": "C:/Users/RTX2070/source/repos/OpenGL/build/external/glfw/src",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -g -std=c99 -Wall -o CMakeFiles\\glfw.dir\\win32_time.c.obj -c C:\\Users\\RTX2070\\source\\repos\\OpenGL\\external\\glfw\\src\\win32_time.c",
+  "file": "C:/Users/RTX2070/source/repos/OpenGL/external/glfw/src/win32_time.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/win32_time.c.obj"
+},
+{
+  "directory": "C:/Users/RTX2070/source/repos/OpenGL/build/external/glfw/src",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -g -std=c99 -Wall -o CMakeFiles\\glfw.dir\\win32_thread.c.obj -c C:\\Users\\RTX2070\\source\\repos\\OpenGL\\external\\glfw\\src\\win32_thread.c",
+  "file": "C:/Users/RTX2070/source/repos/OpenGL/external/glfw/src/win32_thread.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/win32_thread.c.obj"
+},
+{
+  "directory": "C:/Users/RTX2070/source/repos/OpenGL/build/external/glfw/src",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -g -std=c99 -Wall -o CMakeFiles\\glfw.dir\\win32_init.c.obj -c C:\\Users\\RTX2070\\source\\repos\\OpenGL\\external\\glfw\\src\\win32_init.c",
+  "file": "C:/Users/RTX2070/source/repos/OpenGL/external/glfw/src/win32_init.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/win32_init.c.obj"
+},
+{
+  "directory": "C:/Users/RTX2070/source/repos/OpenGL/build/external/glfw/src",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -g -std=c99 -Wall -o CMakeFiles\\glfw.dir\\win32_joystick.c.obj -c C:\\Users\\RTX2070\\source\\repos\\OpenGL\\external\\glfw\\src\\win32_joystick.c",
+  "file": "C:/Users/RTX2070/source/repos/OpenGL/external/glfw/src/win32_joystick.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/win32_joystick.c.obj"
+},
+{
+  "directory": "C:/Users/RTX2070/source/repos/OpenGL/build/external/glfw/src",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -g -std=c99 -Wall -o CMakeFiles\\glfw.dir\\win32_monitor.c.obj -c C:\\Users\\RTX2070\\source\\repos\\OpenGL\\external\\glfw\\src\\win32_monitor.c",
+  "file": "C:/Users/RTX2070/source/repos/OpenGL/external/glfw/src/win32_monitor.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/win32_monitor.c.obj"
+},
+{
+  "directory": "C:/Users/RTX2070/source/repos/OpenGL/build/external/glfw/src",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -g -std=c99 -Wall -o CMakeFiles\\glfw.dir\\win32_window.c.obj -c C:\\Users\\RTX2070\\source\\repos\\OpenGL\\external\\glfw\\src\\win32_window.c",
+  "file": "C:/Users/RTX2070/source/repos/OpenGL/external/glfw/src/win32_window.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/win32_window.c.obj"
+},
+{
+  "directory": "C:/Users/RTX2070/source/repos/OpenGL/build/external/glfw/src",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -g -std=c99 -Wall -o CMakeFiles\\glfw.dir\\wgl_context.c.obj -c C:\\Users\\RTX2070\\source\\repos\\OpenGL\\external\\glfw\\src\\wgl_context.c",
+  "file": "C:/Users/RTX2070/source/repos/OpenGL/external/glfw/src/wgl_context.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/wgl_context.c.obj"
+}
+]

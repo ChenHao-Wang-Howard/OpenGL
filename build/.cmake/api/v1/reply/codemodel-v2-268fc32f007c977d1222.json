@@ -1,0 +1,245 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10
+					]
+				},
+				{
+					"build" : "external/glfw",
+					"childIndexes" : 
+					[
+						2,
+						3
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-external.glfw-Debug-953bf3e6f00a61be285b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.4"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "external/glfw",
+					"targetIndexes" : 
+					[
+						12
+					]
+				},
+				{
+					"build" : "external/glfw/src",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-external.glfw.src-Debug-e9d740cba38d5b73a54a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.4"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "external/glfw/src",
+					"targetIndexes" : 
+					[
+						11,
+						13
+					]
+				},
+				{
+					"build" : "external/glfw/docs",
+					"jsonFile" : "directory-external.glfw.docs-Debug-3599a25893434c91c723.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.4"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "external/glfw/docs"
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "OpenGL",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1,
+						2,
+						3
+					],
+					"name" : "GLFW",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						11,
+						12,
+						13
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Basic_Lighting::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Basic_Lighting-Debug-5e0cb2ec597b9895c2e7.json",
+					"name" : "Basic_Lighting",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Camera::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Camera-Debug-d3e7d714f68094e92133.json",
+					"name" : "Camera",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Colors::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Colors-Debug-dee157875ce3857ac813.json",
+					"name" : "Colors",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Hello_Triangle::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Hello_Triangle-Debug-2ea6bf48c559fd9324f7.json",
+					"name" : "Hello_Triangle",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Light_casters::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Light_casters-Debug-23d9c043a484aa5a0c88.json",
+					"name" : "Light_casters",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Lighting_maps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Lighting_maps-Debug-97c8bb7705ef30024ed1.json",
+					"name" : "Lighting_maps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Materials::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Materials-Debug-d97b17c97c02b16aa87b.json",
+					"name" : "Materials",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Multiple_lights::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Multiple_lights-Debug-debdba86eeee94236a5a.json",
+					"name" : "Multiple_lights",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Shaders::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Shaders-Debug-d3298e95ce33e4e13a09.json",
+					"name" : "Shaders",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Textures::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Textures-Debug-c0d2e42179530104714b.json",
+					"name" : "Textures",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Transformations::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Transformations-Debug-ceed5e000f516b5398cd.json",
+					"name" : "Transformations",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "glfw::@ca12bac854c2ac6b2230",
+					"jsonFile" : "target-glfw-Debug-3f31394082eac1eec250.json",
+					"name" : "glfw",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "uninstall::@691b517da5fa0f694cd4",
+					"jsonFile" : "target-uninstall-Debug-f6874de21f62798da2dd.json",
+					"name" : "uninstall",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "update_mappings::@ca12bac854c2ac6b2230",
+					"jsonFile" : "target-update_mappings-Debug-9d9331c4eeefd42d5b69.json",
+					"name" : "update_mappings",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/RTX2070/source/repos/OpenGL/build",
+		"source" : "C:/Users/RTX2070/source/repos/OpenGL"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
